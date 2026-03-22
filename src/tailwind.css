@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+    --text-default: #1a1a1a;
+    --text-muted:   #1a1a1a50;
+    --text-accent:  #21add4;
+
+    --font-charter: "Charter", "Bitstream Charter", "Lora", serif;
+}
+
+@theme {
+  --color-brand:  var(--text-default);
+  --color-muted:  var(--text-muted);
+  --color-accent: var(--text-accent);
+  
+  --font-serif: var(--font-charter);
+}

@@ -1,0 +1,10 @@
+/home/thomas/Code/web/bphoc-2026/rust-wasm/target/debug/deps/random_color-91ca17a4c6a51d8c.d: /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/lib.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/color_dictionary.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/options/mod.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/options/gamut.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/options/luminosity.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/options/seed.rs
+
+/home/thomas/Code/web/bphoc-2026/rust-wasm/target/debug/deps/librandom_color-91ca17a4c6a51d8c.rmeta: /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/lib.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/color_dictionary.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/options/mod.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/options/gamut.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/options/luminosity.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/options/seed.rs
+
+/home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/lib.rs:
+/home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/color_dictionary.rs:
+/home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/options/mod.rs:
+/home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/options/gamut.rs:
+/home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/options/luminosity.rs:
+/home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/random_color-1.1.0/src/options/seed.rs:

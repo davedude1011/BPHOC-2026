@@ -1,0 +1,31 @@
+{
+  "name": "bphoc-2026",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@kobalte/core": "^0.13.11",
+    "@solidjs/router": "^0.16.1",
+    "@tailwindcss/vite": "^4.2.1",
+    "apexcharts": "^5.10.4",
+    "debounce": "^3.0.0",
+    "katex": "^0.16.40",
+    "lucide-solid": "^0.577.0",
+    "solid-apexcharts": "^0.6.0",
+    "solid-js": "^1.9.11",
+    "tailwindcss": "^4.2.1",
+    "vite-plugin-wasm": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-solid": "^2.11.10",
+    "vite-plugin-solid-svg": "^0.8.1"
+  }
+}

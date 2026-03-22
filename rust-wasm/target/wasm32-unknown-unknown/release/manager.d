@@ -1,0 +1,1 @@
+/home/thomas/Code/web/bphoc-2026/rust-wasm/target/wasm32-unknown-unknown/release/manager.wasm: /home/thomas/Code/web/bphoc-2026/rust-wasm/crates/manager/src/lib.rs /home/thomas/Code/web/bphoc-2026/rust-wasm/crates/shared/src/lib.rs /home/thomas/Code/web/bphoc-2026/rust-wasm/crates/task_1/src/lib.rs /home/thomas/Code/web/bphoc-2026/rust-wasm/crates/task_2/src/lib.rs
