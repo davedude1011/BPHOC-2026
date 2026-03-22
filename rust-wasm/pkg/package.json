@@ -1,0 +1,17 @@
+{
+  "name": "manager",
+  "type": "module",
+  "version": "0.1.0",
+  "files": [
+    "manager_bg.wasm",
+    "manager.js",
+    "manager_bg.js",
+    "manager.d.ts"
+  ],
+  "main": "manager.js",
+  "types": "manager.d.ts",
+  "sideEffects": [
+    "./manager.js",
+    "./snippets/*"
+  ]
+}
