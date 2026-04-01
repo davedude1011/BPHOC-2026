@@ -33,6 +33,11 @@ impl CanvasHandler {
         self.pixels[index] = 0xff000000;
     }
 
+    pub fn draw_dot_color(&mut self, x: u32, y: u32, color: u32) {
+        let index = (y * self.width + x) as usize;
+        self.pixels[index] = color;
+    }
+
     pub fn draw_circle(&mut self, cx: u32, cy: u32, r: u32, filled: bool) {
         let cx = cx as i32;
         let cy = cy as i32;
@@ -107,6 +112,51 @@ impl CanvasHandler {
         
         for i in start..=end {
             self.pixels[i] = 0xff000000;
+        }
+    }
+
+    pub fn draw_circle_color(&mut self, cx: u32, cy: u32, r: u32, filled: bool, color: u32) {
+        let cx = cx as i32;
+        let cy = cy as i32;
+        let r = r as i32;
+
+        let mut x = r;
+        let mut y = 0;
+        let mut d = 1 - r;
+
+        while x >= y {
+            if filled {
+                self.draw_line_h_color((cx - x) as u32, (cx + x) as u32, (cy + y) as u32, color);
+                self.draw_line_h_color((cx - x) as u32, (cx + x) as u32, (cy - y) as u32, color);
+                self.draw_line_h_color((cx - y) as u32, (cx + y) as u32, (cy + x) as u32, color);
+                self.draw_line_h_color((cx - y) as u32, (cx + y) as u32, (cy - x) as u32, color);
+            } else {
+                self.draw_dot_color((cx + x) as u32, (cy + y) as u32, color);
+                self.draw_dot_color((cx + y) as u32, (cy + x) as u32, color);
+                self.draw_dot_color((cx - y) as u32, (cy + x) as u32, color);
+                self.draw_dot_color((cx - x) as u32, (cy + y) as u32, color);
+                self.draw_dot_color((cx - x) as u32, (cy - y) as u32, color);
+                self.draw_dot_color((cx - y) as u32, (cy - x) as u32, color);
+                self.draw_dot_color((cx + y) as u32, (cy - x) as u32, color);
+                self.draw_dot_color((cx + x) as u32, (cy - y) as u32, color);
+            }
+
+            y += 1;
+            if d < 0 {
+                d += 2 * y + 1;
+            } else {
+                x -= 1;
+                d += 2 * (y - x) + 1;
+            }
+        }
+    }
+
+    pub fn draw_line_h_color(&mut self, x1: u32, x2: u32, y: u32, color: u32) {
+        if y >= self.height { return; }
+        let start = x1.min(x2).min(self.width);
+        let end = x1.max(x2).min(self.width);
+        for x in start..end {
+            self.draw_dot_color(x, y, color);
         }
     }
 

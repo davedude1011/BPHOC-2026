@@ -106,7 +106,7 @@ function Component2_1() {
             <div class="flex flex-col gap-2">
                 <DualInput label="N" from={0} to={50_000} step={1} value={N} set_value={set_N} />
                 <div class="flex flex-row">
-                    <DualInput label="m" from={0} to={5000} step={1} value={m} set_value={set_m} />
+                    <DualInput label="m" from={0} to={50}  step={1} value={m} set_value={set_m} />
                     <DualInput label="r" from={0} to={10}  step={1} value={r} set_value={set_r} />
                 </div>
                 <div class="flex flex-row">
@@ -165,7 +165,7 @@ function Component2_2() {
             <div class="flex flex-col gap-2">
                 <DualInput label="N" from={0} to={50_000} step={1} value={N} set_value={set_N} />
                 <div class="flex flex-row">
-                    <DualInput label="m" from={0} to={500} step={1} value={m} set_value={set_m} />
+                    <DualInput label="m" from={0} to={50}  step={1} value={m} set_value={set_m} />
                     <DualInput label="r" from={0} to={10}  step={1} value={r} set_value={set_r} />
                 </div>
                 <div class="flex flex-row">

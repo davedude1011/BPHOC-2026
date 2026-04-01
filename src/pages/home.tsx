@@ -11,9 +11,19 @@ export default function Home() {
             href:     "/task-1",
         },
         {
-            title:    "Brownian Motion",
+            title:    "Brownian motion",
             subtitle: "modeling particle interactions in a closed system",
             href:     "/task-2",
+        },
+        {
+            title:    "Energy quantization",
+            subtitle: "planck's black body radiation spectrum, and einstein's model of molar heat",
+            href:     "/task-3",
+        },
+        {
+            title:    "Photoelectric effect",
+            subtitle: "planck's black body radiation spectrum, and einstein's model of molar heat",
+            href:     "/task-4",
         },
     ]
 

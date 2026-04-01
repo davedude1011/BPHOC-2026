@@ -10,7 +10,10 @@ pub struct WasmManager {
     canvas: CanvasHandler,
 
     task_2_0_vars: (u32, u32),
-    task_2_0_buffer: Vec<(u32, u32, f64, f64)>
+    task_2_0_buffer: Vec<(u32, u32, f64, f64)>,
+
+    task_4_0_buffer:  Vec<(u32, u32, f64, f64)>,
+    task_4_0_buffer2: Vec<(u32, u32, f64, f64)>,
 }
 
 #[wasm_bindgen]
@@ -21,6 +24,9 @@ impl WasmManager {
 
             task_2_0_vars: (0, 0),
             task_2_0_buffer: vec![],
+
+            task_4_0_buffer:  vec![],
+            task_4_0_buffer2: vec![],
         };
     }
 
@@ -83,5 +89,48 @@ impl WasmManager {
         task_2::step_buffer_bouncy(&mut self.task_2_0_buffer, &self.canvas, r, m, R, M);
         task_2::rinse_particle(&mut self.task_2_0_buffer, N, r, R);
         task_2::render_state_buffer(&self.task_2_0_buffer, &mut self.canvas, r, R);
+    }
+
+    pub fn task_4_0_0(&mut self, N: u32) {
+        if self.task_4_0_buffer.len() != N as usize {
+            task_4::init_state_buffer_beta(&mut self.task_4_0_buffer, &self.canvas, N);
+        }
+
+        task_4::step_buffer_beta_walk(&mut self.task_4_0_buffer, &self.canvas);
+        task_4::render_state_buffer_beta(&self.task_4_0_buffer, &self.task_4_0_buffer2, &mut self.canvas);
+    }
+    pub fn task_4_0_1(&mut self, N: u32) {
+        if self.task_4_0_buffer.len() != N as usize {
+            task_4::init_state_buffer_beta(&mut self.task_4_0_buffer, &self.canvas, N);
+        }
+
+        task_4::step_buffer_beta(&mut self.task_4_0_buffer, &self.canvas);
+        task_4::render_state_buffer_beta(&self.task_4_0_buffer, &self.task_4_0_buffer2, &mut self.canvas);
+    }
+    pub fn task_4_1(&mut self, N: u32, f: f32, I: u32) -> u32 {
+        if self.task_4_0_buffer.len() != N as usize {
+            task_4::init_state_buffer(&mut self.task_4_0_buffer, &self.canvas, N);
+        }
+        if self.task_4_0_buffer2.len() != I as usize {
+            task_4::init_state_buffer_packets_beta(&mut self.task_4_0_buffer2, &self.canvas, I);
+        }
+
+        let escaped_electron_count = task_4::step_buffer(&mut self.task_4_0_buffer, &mut self.task_4_0_buffer2, &self.canvas, f);
+        task_4::render_state_buffer(&self.task_4_0_buffer, &self.task_4_0_buffer2, &mut self.canvas, f);
+
+        escaped_electron_count
+    }
+    pub fn task_4_2(&mut self, N: u32, f: f32, I: u32) -> f32 {
+        if self.task_4_0_buffer.len() != N as usize {
+            task_4::init_state_buffer(&mut self.task_4_0_buffer, &self.canvas, N);
+        }
+        if self.task_4_0_buffer2.len() != I as usize {
+            task_4::init_state_buffer_packets_beta(&mut self.task_4_0_buffer2, &self.canvas, I);
+        }
+
+        let max_k = task_4::step_buffer_energy(&mut self.task_4_0_buffer, &mut self.task_4_0_buffer2, &self.canvas, f);
+        task_4::render_state_buffer(&self.task_4_0_buffer, &self.task_4_0_buffer2, &mut self.canvas, f);
+
+        max_k
     }
 }

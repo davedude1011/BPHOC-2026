@@ -14,4 +14,8 @@ export class WasmManager {
     task_2_0(N: number, r: number, R: number): void;
     task_2_1(N: number, m: number, r: number, M: number, R: number): void;
     task_2_2(N: number, m: number, r: number, M: number, R: number): void;
+    task_4_0_0(N: number): void;
+    task_4_0_1(N: number): void;
+    task_4_1(N: number, f: number, I: number): number;
+    task_4_2(N: number, f: number, I: number): number;
 }

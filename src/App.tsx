@@ -2,6 +2,8 @@ import { Route, Router } from "@solidjs/router";
 import Home from "./pages/home";
 import TaskOne from "./pages/task1";
 import TaskTwo from "./pages/task2";
+import TaskThree from "./pages/task3";
+import TaskFour from "./pages/task4";
 
 export default function App() {
   return (
@@ -9,6 +11,8 @@ export default function App() {
       <Route path="/"        component={Home} />
       <Route path="/task-1"  component={TaskOne} />
       <Route path="/task-2"  component={TaskTwo} />
+      <Route path="/task-3"  component={TaskThree} />
+      <Route path="/task-4"  component={TaskFour} />
     </Router>
   )
 }

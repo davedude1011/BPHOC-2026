@@ -154,6 +154,7 @@ dependencies = [
  "shared",
  "task_1",
  "task_2",
+ "task_4",
  "wasm-bindgen",
 ]
 
@@ -304,6 +305,15 @@ dependencies = [
 
 [[package]]
 name = "task_2"
+version = "0.1.0"
+dependencies = [
+ "getrandom",
+ "rand",
+ "shared",
+]
+
+[[package]]
+name = "task_4"
 version = "0.1.0"
 dependencies = [
  "getrandom",

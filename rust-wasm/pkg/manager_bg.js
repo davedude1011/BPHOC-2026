@@ -95,6 +95,38 @@ export class WasmManager {
     task_2_2(N, m, r, M, R) {
         wasm.wasmmanager_task_2_2(this.__wbg_ptr, N, m, r, M, R);
     }
+    /**
+     * @param {number} N
+     */
+    task_4_0_0(N) {
+        wasm.wasmmanager_task_4_0_0(this.__wbg_ptr, N);
+    }
+    /**
+     * @param {number} N
+     */
+    task_4_0_1(N) {
+        wasm.wasmmanager_task_4_0_1(this.__wbg_ptr, N);
+    }
+    /**
+     * @param {number} N
+     * @param {number} f
+     * @param {number} I
+     * @returns {number}
+     */
+    task_4_1(N, f, I) {
+        const ret = wasm.wasmmanager_task_4_1(this.__wbg_ptr, N, f, I);
+        return ret >>> 0;
+    }
+    /**
+     * @param {number} N
+     * @param {number} f
+     * @param {number} I
+     * @returns {number}
+     */
+    task_4_2(N, f, I) {
+        const ret = wasm.wasmmanager_task_4_2(this.__wbg_ptr, N, f, I);
+        return ret;
+    }
 }
 if (Symbol.dispose) WasmManager.prototype[Symbol.dispose] = WasmManager.prototype.free;
 export function __wbg___wbindgen_throw_6ddd609b62940d55(arg0, arg1) {
