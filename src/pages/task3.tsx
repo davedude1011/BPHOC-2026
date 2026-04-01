@@ -1,3 +1,4 @@
+import 'chart.js/auto';
 import { Scatter } from "solid-chartjs";
 import { createMemo, createSignal } from "solid-js";
 import { DualInput } from "../components/components";

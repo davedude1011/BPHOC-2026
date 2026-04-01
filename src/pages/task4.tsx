@@ -1,3 +1,4 @@
+import 'chart.js/auto';
 import { Scatter } from "solid-chartjs";
 import { createEffect, createMemo, createSignal, onCleanup } from "solid-js";
 import type { WasmManager } from "../../rust-wasm/pkg/manager";
