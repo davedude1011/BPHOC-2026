@@ -108,6 +108,7 @@ function ModelRadiation() {
     const data = createMemo(() => ({
         datasets: [
             {
+                label: "Wavelength vs Spectral Radiance",
                 data: values(),
                 backgroundColor: "#e33232",
                 showLine: true,
@@ -204,6 +205,7 @@ function ModelMolarHeatCapacity() {
     const data = createMemo(() => ({
         datasets: [
             {
+                label: "Temperature vs Molar heat capacity",
                 data: values(),
                 backgroundColor: "#e33232",
                 showLine: true,

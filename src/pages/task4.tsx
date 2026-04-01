@@ -119,9 +119,7 @@ function Component4_1() {
                 label: "Electrons per second",
                 data: history().slice(-600),
                 backgroundColor: "#e33232",
-                borderColor: "#e33232",
                 showLine: true,
-                tension: 0.3,
             },
         ],
     }));
@@ -205,18 +203,16 @@ function Component4_2() {
 
     const f_animate = () => {
         if (f() == 900) set_f(0);
-        else set_f(f => f + 5);
+        else set_f(f => f + 10);
     }
 
     const chart_data = createMemo(() => ({
         datasets: [
             {
-                label: "Electrons per second",
+                label: "Energy vs Frequency",
                 data: history().slice(-600),
                 backgroundColor: "#e33232",
-                borderColor: "#e33232",
                 showLine: true,
-                tension: 0.3,
             },
         ],
     }));
