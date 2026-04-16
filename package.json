@@ -19,6 +19,7 @@
     "debounce": "^3.0.0",
     "katex": "^0.16.40",
     "lucide-solid": "^0.577.0",
+    "nf": "^0.0.3",
     "solid-apexcharts": "^0.6.0",
     "solid-chartjs": "^1.3.11",
     "solid-js": "^1.9.11",
