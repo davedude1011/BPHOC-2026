@@ -22,8 +22,13 @@ export default function Home() {
         },
         {
             title:    "Photoelectric effect",
-            subtitle: "planck's black body radiation spectrum, and einstein's model of molar heat",
+            subtitle: "modelling electron-photon absorption and scattering",
             href:     "/task-4",
+        },
+        {
+            title:    "Hydrogen emission spectrum",
+            subtitle: "plotting photon energy spectrums, and bohr's model of a hydrogenic atom",
+            href:     "/task-5",
         },
     ]
 

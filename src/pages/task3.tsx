@@ -330,7 +330,7 @@ export default function TaskThree() {
             <Break />
             <Text>
                 einstein modeled atoms as being vibrating oscillators, as if they where connected in each dimension by springs, then following earlier work
-                by max plank, einstein quantized the energy level of the atoms, such that a minimum temperature (a materials einstein temperature <Latex>\theta_E</Latex>) 
+                by max planck, einstein quantized the energy level of the atoms, such that a minimum temperature (a materials einstein temperature <Latex>\theta_E</Latex>) 
                 was required for any atom in the solid to vibrate at all, meaning below this non-zero value, the atom simply doesn't have the required energy
                 to reach the next quantized energy level, and so remains motionless
             </Text>
@@ -346,7 +346,7 @@ export default function TaskThree() {
             </Text>
             <Text>
                 with the angular frequency <Latex>w_0</Latex>, you can calculate the einstein temperature with <Latex>{"\\theta_E = \\dfrac{\\hbar w_0}{k_B}"}</Latex>, where 
-                <Latex>\hbar</Latex> is the reduced planks constant (<Latex>{"\\frac{h}{2\\pi}"}</Latex>), and <Latex>k_B</Latex> is the boltzmann constant
+                <Latex>\hbar</Latex> is the reduced plancks constant (<Latex>{"\\frac{h}{2\\pi}"}</Latex>), and <Latex>k_B</Latex> is the boltzmann constant
             </Text>
             <Break />
             <Text>

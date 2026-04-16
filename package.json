@@ -15,6 +15,7 @@
     "apexcharts": "^5.10.4",
     "chart.js": "^4.5.1",
     "chartjs": "^0.3.24",
+    "chartjs-plugin-annotation": "^3.1.0",
     "debounce": "^3.0.0",
     "katex": "^0.16.40",
     "lucide-solid": "^0.577.0",
