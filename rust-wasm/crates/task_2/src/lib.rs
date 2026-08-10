@@ -185,8 +185,6 @@ pub fn step_buffer(buffer: &mut Vec<(u32, u32, f64, f64)>, canvas: &CanvasHandle
 }
 
 pub fn step_buffer_bouncy(buffer: &mut Vec<(u32, u32, f64, f64)>, canvas: &CanvasHandler, r: u32, m: u32, R: u32, M: u32) {
-    let mut rng = rand::rng();
-
     let N = buffer.len() - 1;
 
     let particle_distance = R as f64 + r as f64;

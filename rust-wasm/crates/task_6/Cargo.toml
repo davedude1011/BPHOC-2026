@@ -1,0 +1,11 @@
+[package]
+name = "task_6"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+getrandom = { version = "0.4.2", features = ["wasm_js"] }
+rand = "0.10.0"
+rand_distr = "0.6.0"
+rustc-hash = "2.1.2"
+shared = { path = "../shared" }

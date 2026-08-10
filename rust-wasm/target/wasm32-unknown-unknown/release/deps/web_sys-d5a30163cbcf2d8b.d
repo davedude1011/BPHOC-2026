@@ -1,0 +1,10 @@
+/home/thomas/Code/web/bphoc-2026/rust-wasm/target/wasm32-unknown-unknown/release/deps/web_sys-d5a30163cbcf2d8b.d: /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/lib.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/features/mod.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/features/gen_EventTarget.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/features/gen_Window.rs
+
+/home/thomas/Code/web/bphoc-2026/rust-wasm/target/wasm32-unknown-unknown/release/deps/libweb_sys-d5a30163cbcf2d8b.rlib: /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/lib.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/features/mod.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/features/gen_EventTarget.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/features/gen_Window.rs
+
+/home/thomas/Code/web/bphoc-2026/rust-wasm/target/wasm32-unknown-unknown/release/deps/libweb_sys-d5a30163cbcf2d8b.rmeta: /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/lib.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/features/mod.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/features/gen_EventTarget.rs /home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/features/gen_Window.rs
+
+/home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/lib.rs:
+/home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/features/mod.rs:
+/home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/features/gen_EventTarget.rs:
+/home/thomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/web-sys-0.3.91/src/features/gen_Window.rs:

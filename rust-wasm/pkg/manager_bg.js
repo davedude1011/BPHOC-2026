@@ -39,6 +39,56 @@ export class WasmManager {
         return WasmManager.__wrap(ret);
     }
     /**
+     * @param {number} n
+     * @param {number} l
+     * @param {number} m
+     * @param {number} z
+     * @param {number} a
+     * @param {number} plane
+     * @param {number} zoom
+     * @returns {number}
+     */
+    task_10_0(n, l, m, z, a, plane, zoom) {
+        const ret = wasm.wasmmanager_task_10_0(this.__wbg_ptr, n, l, m, z, a, plane, zoom);
+        return ret;
+    }
+    /**
+     * @param {number} n
+     * @param {number} l
+     * @param {number} m
+     * @param {number} z
+     * @param {number} a
+     * @param {number} points
+     * @param {number} zoom
+     * @param {number} yaw
+     * @param {number} pitch
+     * @param {number} gain
+     */
+    task_10_1(n, l, m, z, a, points, zoom, yaw, pitch, gain) {
+        wasm.wasmmanager_task_10_1(this.__wbg_ptr, n, l, m, z, a, points, zoom, yaw, pitch, gain);
+    }
+    /**
+     * @param {number} n
+     * @param {number} z
+     * @param {number} a
+     * @returns {number}
+     */
+    task_10_energy(n, z, a) {
+        const ret = wasm.wasmmanager_task_10_energy(this.__wbg_ptr, n, z, a);
+        return ret;
+    }
+    /**
+     * @param {number} n
+     * @param {number} l
+     * @param {number} z
+     * @param {number} a
+     * @returns {number}
+     */
+    task_10_mean_radius(n, l, z, a) {
+        const ret = wasm.wasmmanager_task_10_mean_radius(this.__wbg_ptr, n, l, z, a);
+        return ret;
+    }
+    /**
      * @param {bigint} seed
      * @param {number} N
      * @param {number} s
@@ -126,6 +176,34 @@ export class WasmManager {
     task_4_2(N, f, I) {
         const ret = wasm.wasmmanager_task_4_2(this.__wbg_ptr, N, f, I);
         return ret;
+    }
+    /**
+     * @param {number} m
+     * @param {number} scalar
+     */
+    task_6_0(m, scalar) {
+        wasm.wasmmanager_task_6_0(this.__wbg_ptr, m, scalar);
+    }
+    /**
+     * @param {number} m
+     * @param {number} t
+     * @param {number} scalar
+     * @param {boolean} overlay
+     */
+    task_6_1(m, t, scalar, overlay) {
+        wasm.wasmmanager_task_6_1(this.__wbg_ptr, m, t, scalar, overlay);
+    }
+    /**
+     * @param {number} m
+     * @param {number} t
+     * @param {number} c
+     * @param {number} h
+     * @param {number} s
+     * @param {number} scalar
+     * @param {boolean} overlay
+     */
+    task_6_2(m, t, c, h, s, scalar, overlay) {
+        wasm.wasmmanager_task_6_2(this.__wbg_ptr, m, t, c, h, s, scalar, overlay);
     }
 }
 if (Symbol.dispose) WasmManager.prototype[Symbol.dispose] = WasmManager.prototype.free;

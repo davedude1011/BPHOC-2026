@@ -12,3 +12,11 @@ shared = { path = "../shared" }
 task_1 = { path = "../task_1" }
 task_2 = { path = "../task_2" }
 task_4 = { path = "../task_4" }
+task_6 = { path = "../task_6" }
+task_10 = { path = "../task_10" }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+panic = "abort"

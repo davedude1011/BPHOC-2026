@@ -38,16 +38,17 @@ export class Manager {
     }
 
     update_canvas(callback: (wasm_manager: WasmManager) => void) {
-        if (!this.wasm_manager) return;
-        if (!this.ctx) return;
-        if (!this.width) return;
-        if (!this.height) return;
+        if (!this.wasm_manager || !this.ctx || !this.width || !this.height) return;
 
         callback(this.wasm_manager);
 
         const pixels_ptr = this.wasm_manager.get_pixels_ptr();
-        const pixels = new Uint8ClampedArray(memory.buffer, pixels_ptr, this.width * this.height * 4);
+        const expected_bytes = this.width * this.height * 4;
+        const current_buffer = memory.buffer;
 
+        if (pixels_ptr + expected_bytes > current_buffer.byteLength) { return }
+
+        const pixels = new Uint8ClampedArray(current_buffer, pixels_ptr, expected_bytes);
         const image_data = new ImageData(pixels, this.width, this.height);
         
         this.ctx.putImageData(image_data, 0, 0);

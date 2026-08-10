@@ -1,7 +1,6 @@
 [workspace]
 members = [
-    "crates/*",
-]
+    "crates/*"]
 resolver = "2"
 
 # High-performance release settings
